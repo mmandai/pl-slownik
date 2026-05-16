@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Słownik Inwestora Nieruchomości 2026 — ROI, Flip, Ryczałt, PCC i więcej</title>
+<meta name="description" content="Słownik pojęć dla inwestorów nieruchomości w Polsce. Definicje i wzory dla ROI, rentowność najmu, ryczałt, PCC, flip, LTV i więcej. Aktualizacja 2026.">
+<link rel="canonical" href="https://mmandai.github.io/pl-slownik/">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SFXKXMCE75"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SFXKXMCE75');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"DefinedTermSet","name":"Słownik Inwestora Nieruchomości","description":"Słownik pojęć dla inwestorów nieruchomości w Polsce z definicjami i wzorami. Aktualizacja 2026.","url":"https://mmandai.github.io/pl-slownik/","inLanguage":"pl","publisher":{"@type":"Organization","name":"MMDAI","url":"https://mmandai.github.io"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"MMDAI","item":"https://mmandai.github.io"},{"@type":"ListItem","position":2,"name":"Pakiet Inwestora","item":"https://mmandai.github.io/pakiet-inwestora/"},{"@type":"ListItem","position":3,"name":"Słownik PL","item":"https://mmandai.github.io/pl-slownik/"}]}]}
+</script>
+<style>
+:root{
+  --bg:#F5F5F0;--bg2:#FFFFFF;--bg3:#EBEBEA;
+  --line:rgba(0,0,0,0.09);
+  --text:#111111;--muted:rgba(17,17,17,0.52);--dim:rgba(17,17,17,0.32);
+  --red:#DC2626;--redd:#B91C1C;
+  --gold:#B45309;--green:#15803D;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--bg2);border-bottom:1px solid var(--line);}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 24px;}
+.logo{font-family:'DM Mono',monospace;font-size:17px;font-weight:500;letter-spacing:-0.5px;color:var(--text);}
+.logo span{color:var(--red);}
+.nav-links{display:flex;gap:24px;align-items:center;}
+.nav-links a{font-size:13px;color:var(--muted);transition:color .2s;}
+.nav-links a:hover{color:var(--text);}
+
+/* HERO */
+.hero{max-width:1100px;margin:0 auto;padding:72px 24px 56px;border-bottom:1px solid var(--line);text-align:center;}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:11px;color:var(--red);letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;}
+.hero-tag::before{content:'//';opacity:.5;}
+.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(36px,5vw,64px);font-weight:800;line-height:1.05;letter-spacing:-0.02em;color:var(--text);margin-bottom:16px;}
+.hero h1 em{font-style:normal;color:var(--red);}
+.hero-sub{font-size:16px;color:var(--muted);max-width:560px;line-height:1.6;margin:0 auto 32px;}
+.hero-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.hero-pill{font-family:'DM Mono',monospace;font-size:12px;color:var(--dim);padding:6px 14px;border:1px solid var(--line);border-radius:20px;letter-spacing:.5px;}
+
+/* FILTER BAR */
+.filter-bar{background:var(--bg2);border-bottom:1px solid var(--line);padding:14px 0;position:sticky;top:57px;z-index:99;}
+.filter-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.filter-pill{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:1px solid var(--line);color:var(--muted);background:var(--bg2);cursor:pointer;transition:all .15s;letter-spacing:.04em;}
+.filter-pill:hover{border-color:var(--red);color:var(--red);}
+.filter-pill.active{background:var(--red);border-color:var(--red);color:#fff;}
+.results-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--dim);margin-left:auto;}
+
+/* LAYOUT */
+.glossary-wrap{max-width:1100px;margin:0 auto;padding:48px 24px 80px;display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:start;}
+@media(max-width:900px){.glossary-wrap{grid-template-columns:1fr;}}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:120px;}
+.sidebar-section{margin-bottom:24px;}
+.sidebar-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.letter-grid{display:flex;flex-wrap:wrap;gap:4px;}
+.letter-btn{font-family:'DM Mono',monospace;font-size:12px;font-weight:500;color:var(--muted);text-decoration:none;padding:4px 7px;border-radius:6px;transition:all .15s;border:1px solid transparent;}
+.letter-btn:hover,.letter-btn.active{color:var(--red);background:rgba(220,38,38,.06);border-color:rgba(220,38,38,.2);}
+.sidebar-cta{background:var(--text);border-radius:12px;padding:20px;text-align:center;}
+.sidebar-cta h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#fff;margin-bottom:6px;}
+.sidebar-cta p{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:14px;line-height:1.5;}
+.cta-links{display:flex;flex-direction:column;gap:6px;}
+.cta-link{font-size:12px;font-weight:600;color:rgba(255,255,255,.7);text-decoration:none;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);transition:all .15s;text-align:center;}
+.cta-link:hover{background:var(--red);color:#fff;border-color:var(--red);}
+@media(max-width:900px){.sidebar{display:none;}}
+
+/* TERMS */
+.terms-section{margin-bottom:40px;}
+.section-anchor{display:block;height:120px;margin-top:-120px;visibility:hidden;}
+.section-letter{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.term-card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:10px;transition:border-color .15s;}
+.term-card:hover{border-color:rgba(220,38,38,.25);}
+.term-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px;}
+.term-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;color:var(--text);letter-spacing:-.01em;}
+.term-abbr{font-family:'DM Mono',monospace;font-size:11px;color:var(--red);background:rgba(220,38,38,.08);padding:2px 8px;border-radius:4px;font-weight:500;white-space:nowrap;flex-shrink:0;border:1px solid rgba(220,38,38,.15);}
+.term-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px;}
+.term-tag{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;padding:2px 8px;border-radius:4px;letter-spacing:.04em;text-transform:uppercase;}
+.tag-najem{background:rgba(21,128,61,.1);color:var(--green);}
+.tag-flip{background:rgba(180,83,9,.1);color:var(--gold);}
+.tag-kredyt{background:rgba(37,99,235,.1);color:#1d4ed8;}
+.tag-podatek{background:rgba(220,38,38,.1);color:var(--redd);}
+.tag-zakup{background:rgba(107,33,168,.1);color:#6b21a8;}
+.tag-ogolny{background:var(--bg3);color:var(--muted);}
+.term-definition{font-size:13px;color:var(--muted);line-height:1.75;font-weight:400;margin-bottom:8px;}
+.term-formula{font-family:'DM Mono',monospace;font-size:11px;color:var(--text);background:var(--bg3);border-left:3px solid var(--red);padding:9px 13px;border-radius:0 8px 8px 0;margin:8px 0;line-height:1.7;}
+.term-example{font-size:12px;color:var(--dim);line-height:1.7;border-top:1px solid var(--line);padding-top:8px;margin-top:8px;}
+.term-example strong{color:var(--muted);font-weight:600;}
+.term-calc{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--red);text-decoration:none;margin-top:8px;transition:opacity .2s;}
+.term-calc:hover{opacity:.7;}
+.no-results{text-align:center;padding:60px 0;display:none;}
+.no-results p{font-size:15px;color:var(--muted);}
+.hidden{display:none !important;}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:36px 24px;text-align:center;}
+.footer-inner{max-width:1100px;margin:0 auto;}
+.footer-links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:14px;font-size:13px;}
+.footer-links a{color:var(--muted);transition:color .2s;}
+.footer-links a:hover{color:var(--red);}
+.footer-copy{font-family:'DM Mono',monospace;font-size:11px;color:var(--dim);letter-spacing:.5px;}
+.disclaimer{max-width:900px;margin:14px auto 0;font-size:11px;color:var(--dim);line-height:1.6;}
+
+@media(max-width:560px){.glossary-wrap{padding:32px 16px 60px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="https://mmandai.github.io" class="logo">MM<span>DAI</span></a>
+    <div class="nav-links">
+      <a href="https://mmandai.github.io/pakiet-inwestora/">Kalkulatory PL</a>
+      <a href="https://mmandai.github.io/about/">About</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-tag">Nieruchomości Polska</div>
+  <h1>Słownik <em>Inwestora</em></h1>
+  <p class="hero-sub">Każde pojęcie używane w naszych kalkulatorach — jasno wyjaśnione, ze wzorami i przykładami. Aktualizacja 2026.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">Wynajem</span>
+    <span class="hero-pill">Flip</span>
+    <span class="hero-pill">Kredyt hipoteczny</span>
+    <span class="hero-pill">Podatki</span>
+    <span class="hero-pill">Zakup</span>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-pill active" onclick="setFilter('all',this)">Wszystkie</button>
+    <button class="filter-pill" onclick="setFilter('najem',this)">Wynajem</button>
+    <button class="filter-pill" onclick="setFilter('flip',this)">Flip</button>
+    <button class="filter-pill" onclick="setFilter('kredyt',this)">Kredyt</button>
+    <button class="filter-pill" onclick="setFilter('podatek',this)">Podatek</button>
+    <button class="filter-pill" onclick="setFilter('zakup',this)">Zakup</button>
+    <span class="results-count" id="resultsCount"></span>
+  </div>
+</div>
+
+<div class="glossary-wrap">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-cta">
+      <h3>Użyj kalkulatorów</h3>
+      <p>Sprawdź te pojęcia w praktyce — bezpłatne narzędzia.</p>
+      <div class="cta-links">
+        <a href="https://mmandai.github.io/pl-rentownosc-najmu/" class="cta-link">Rentowność Najmu →</a>
+        <a href="https://mmandai.github.io/pl-kredyt-vs-wynajem/" class="cta-link">Kredyt vs Wynajem →</a>
+        <a href="https://mmandai.github.io/pakiet-inwestora/" class="cta-link">Pakiet Inwestora →</a>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-label">Przejdź do litery</div>
+    <div class="letter-grid" id="letterGrid"></div>
+  </div>
+</aside>
+
+<!-- TERMS -->
+<div id="termsContainer">
+<div class="no-results" id="noResults"><p>Brak pojęć. Spróbuj innego filtra.</p></div>
+
+<!-- A -->
+<div class="terms-section" data-letter="A">
+<span class="section-anchor" id="section-A"></span>
+<div class="section-letter">A</div>
+
+<div class="term-card" data-tags="ogolny zakup" data-name="amortyzacja">
+  <div class="term-header"><div class="term-name">Amortyzacja</div></div>
+  <div class="term-tags"><span class="term-tag tag-kredyt">Kredyt</span><span class="term-tag tag-podatek">Podatek</span></div>
+  <div class="term-definition">Stopniowe zmniejszanie wartości księgowej środka trwałego (np. nieruchomości) w czasie. W kontekście kredytu hipotecznego — spłacanie kapitału raty po racie. W kontekście podatkowym — możliwość odliczenia zużycia środka trwałego od dochodu (2% rocznie dla budynków mieszkalnych, 2,5% dla użytkowych).</div>
+  <div class="term-formula">Rata kredytu = K × [r(1+r)ⁿ] / [(1+r)ⁿ − 1]<br>K = kapitał · r = miesięczna stopa · n = liczba rat</div>
+  <div class="term-example"><strong>Przykład:</strong> Kredyt 400.000 zł na 25 lat przy 7% → rata ~2.828 zł/mies. W pierwszych latach ~80% raty to odsetki.</div>
+</div>
+
+<div class="term-card" data-tags="flip" data-name="arv after repair value">
+  <div class="term-header"><div class="term-name">ARV (After-Repair Value)</div><span class="term-abbr">ARV</span></div>
+  <div class="term-tags"><span class="term-tag tag-flip">Flip</span></div>
+  <div class="term-definition">Szacowana wartość rynkowa nieruchomości po zakończeniu remontu. Kluczowy punkt wyjścia do analizy opłacalności flipa. ARV musi być realistyczne — opieraj się na faktycznych transakcjach podobnych nieruchomości w tej samej lokalizacji, nie na ofertach sprzedaży.</div>
+  <div class="term-formula">Maksymalna cena zakupu = (ARV × 70%) − Koszt remontu</div>
+  <div class="term-example"><strong>Przykład:</strong> ARV = 500.000 zł · Remont = 60.000 zł → Max cena zakupu = 500.000 × 70% − 60.000 = 290.000 zł.</div>
+  <a href="https://mmandai.github.io/pakiet-inwestora/" class="term-calc">→ Kalkulator Zysk z Flipu</a>
+</div>
+
+</div>
+
+<!-- C -->
+<div class="terms-section" data-letter="C">
+<span class="section-anchor" id="section-C"></span>
+<div class="section-letter">C</div>
+
+<div class="term-card" data-tags="najem flip" data-name="cashflow przepływ gotówki">
+  <div class="term-header"><div class="term-name">Cashflow (Przepływ Gotówki)</div><span class="term-abbr">CF</span></div>
+  <div class="term-tags"><span class="term-tag tag-najem">Wynajem</span></div>
+  <div class="term-definition">Różnica między przychodami z najmu a wszystkimi wydatkami związanymi z nieruchomością w danym miesiącu. Dodatni cashflow oznacza, że nieruchomość zarabia na siebie i generuje zysk. Ujemny — że dopłacasz do inwestycji.</div>
+  <div class="term-formula">Miesięczny Cashflow = Czynsz − Rata kredytu − Koszty operacyjne − Podatek<br>Koszty operacyjne = Czynsz do wspólnoty + Ubezpieczenie + Rezerwa remontowa</div>
+  <div class="term-example"><strong>Przykład:</strong> Czynsz 2.800 zł − Rata 2.100 zł − Koszty 400 zł − Podatek 200 zł = Cashflow +100 zł/mies.</div>
+  <a href="https://mmandai.github.io/pl-rentownosc-najmu/" class="term-calc">→ Kalkulator Rentowności</a>
+</div>
+
+</div>
+
+<!-- F -->
+<div class="terms-section" data-letter="F">
+<span class="section-anchor" id="section-F"></span>
+<div class="section-letter">F</div>
+
+<div class="term-card" data-tags="flip" data-name="flip nieruchomości">
+  <div class="term-header"><div class="term-name">Flip Nieruchomości</div></div>
+  <div class="term-tags"><span class="term-tag tag-flip">Flip</span><span class="term-tag tag-podatek">Podatek</span></div>
+  <div class="term-definition">Strategia inwestycyjna polegająca na zakupie nieruchomości poniżej wartości rynkowej, przeprowadzeniu remontu i sprzedaży z zyskiem. Kluczowe jest kupowanie z odpowiednim dyskontem (reguła 70%), trafne kosztorysowanie remontu i realistyczna ocena ARV. Zysk z flipa podlega podatkowi dochodowemu 19% (PIT).</div>
+  <div class="term-formula">Zysk z flipa = Cena sprzedaży − Cena zakupu − Remont − PCC − Koszty transakcyjne<br>Podatek = Zysk × 19% (PIT)</div>
+  <div class="term-example"><strong>Uwaga:</strong> Jeśli sprzedajesz przed upływem 5 lat od nabycia (licząc od końca roku zakupu), zysk podlega opodatkowaniu. Po 5 latach — zwolnienie z podatku.</div>
+  <a href="https://mmandai.github.io/pakiet-inwestora/" class="term-calc">→ Kalkulator Zysk z Flipu</a>
+</div>
+
+</div>
+
+<!-- K -->
+<div class="terms-section" data-letter="K">
+<span class="section-anchor" id="section-K"></span>
+<div class="section-letter">K</div>
+
+<div class="term-card" data-tags="kredyt zakup" data-name="kredyt hipoteczny">
+  <div class="term-header"><div class="term-name">Kredyt Hipoteczny</div></div>
+  <div class="term-tags"><span class="term-tag tag-kredyt">Kredyt</span><span class="term-tag tag-zakup">Zakup</span></div>
+  <div class="term-definition">Długoterminowy kredyt bankowy zabezpieczony hipoteką na nieruchomości. W Polsce dominuje oprocentowanie zmienne oparte o WIBOR (aktualnie 6M WIBOR). Minimalny wkład własny: 20% (lub 10% przy ubezpieczeniu niskiego wkładu). Zdolność kredytowa liczona jest zazwyczaj dla raty na poziomie max 40–50% dochodów.</div>
+  <div class="term-formula">Rata = K × [r(1+r)ⁿ] / [(1+r)ⁿ − 1]<br>RRSO uwzględnia wszystkie koszty kredytu łącznie z prowizją i ubezpieczeniami</div>
+  <div class="term-example"><strong>Przykład:</strong> Mieszkanie 500.000 zł · Wkład 20% = 100.000 zł · Kredyt 400.000 zł · Oprocentowanie 7,5% · 25 lat → rata ~2.963 zł/mies.</div>
+  <a href="https://mmandai.github.io/pl-kredyt-vs-wynajem/" class="term-calc">→ Kalkulator Kredyt vs Wynajem</a>
+</div>
+
+<div class="term-card" data-tags="najem" data-name="koszt remontu kosztorys">
+  <div class="term-header"><div class="term-name">Kosztorys Remontu</div></div>
+  <div class="term-tags"><span class="term-tag tag-flip">Flip</span><span class="term-tag tag-najem">Wynajem</span></div>
+  <div class="term-definition">Szczegółowe zestawienie planowanych kosztów prac remontowych. Kluczowy element analizy flipa i zakupu pod wynajem. Standardowy błąd to niedoszacowanie — zawsze dodaj rezerwę 10–20% na nieprzewidziane wydatki. Największe pozycje: instalacje (elektryczna, hydrauliczna), łazienka, kuchnia, podłogi.</div>
+  <div class="term-formula">Całkowity koszt remontu = Materiały + Robocizna + Rezerwa (10–20%)<br>Koszt na m² w Polsce: standard 800–1.500 zł/m² · wysoki standard 1.500–2.500 zł/m²</div>
+  <a href="https://mmandai.github.io/pakiet-inwestora/" class="term-calc">→ Estymator Kosztów Remontu</a>
+</div>
+
+</div>
+
+<!-- L -->
+<div class="terms-section" data-letter="L">
+<span class="section-anchor" id="section-L"></span>
+<div class="section-letter">L</div>
+
+<div class="term-card" data-tags="kredyt" data-name="ltv loan to value wskaźnik">
+  <div class="term-header"><div class="term-name">LTV (Loan-to-Value)</div><span class="term-abbr">LTV</span></div>
+  <div class="term-tags"><span class="term-tag tag-kredyt">Kredyt</span></div>
+  <div class="term-definition">Wskaźnik wyrażający stosunek kwoty kredytu do wartości nieruchomości. Im niższe LTV, tym mniejsze ryzyko dla banku i lepsze warunki kredytu. W Polsce banki zazwyczaj wymagają minimalnego wkładu własnego 20% (LTV max 80%). Przy LTV powyżej 80% wymagane jest ubezpieczenie niskiego wkładu własnego.</div>
+  <div class="term-formula">LTV = Kwota kredytu ÷ Wartość nieruchomości × 100%<br>Wkład własny % = 100% − LTV%</div>
+  <div class="term-example"><strong>Przykład:</strong> Kredyt 360.000 zł na mieszkanie warte 450.000 zł → LTV = 80%. Wkład własny = 20%.</div>
+</div>
+
+</div>
+
+<!-- P -->
+<div class="terms-section" data-letter="P">
+<span class="section-anchor" id="section-P"></span>
+<div class="section-letter">P</div>
+
+<div class="term-card" data-tags="podatek zakup" data-name="pcc podatek od czynności cywilnoprawnych">
+  <div class="term-header"><div class="term-name">PCC (Podatek od Czynności Cywilnoprawnych)</div><span class="term-abbr">PCC</span></div>
+  <div class="term-tags"><span class="term-tag tag-podatek">Podatek</span><span class="term-tag tag-zakup">Zakup</span></div>
+  <div class="term-definition">Podatek płacony przy zakupie nieruchomości z rynku wtórnego. Wynosi 2% wartości rynkowej nieruchomości. Przy zakupie z rynku pierwotnego (od dewelopera) płacisz VAT 8% zamiast PCC. Od 2023 roku pierwsze mieszkanie kupowane przez osobę fizyczną jest zwolnione z PCC.</div>
+  <div class="term-formula">PCC = Cena zakupu × 2% (rynek wtórny)<br>Brak PCC przy zakupie od dewelopera (VAT w cenie) · Brak PCC dla kupującego pierwsze mieszkanie</div>
+  <div class="term-example"><strong>Przykład:</strong> Mieszkanie z rynku wtórnego za 450.000 zł → PCC = 9.000 zł (płatne u notariusza). Pierwsze mieszkanie → PCC = 0 zł.</div>
+  <a href="https://mmandai.github.io/pakiet-inwestora/" class="term-calc">→ Kalkulator Zysk z Flipu</a>
+</div>
+
+<div class="term-card" data-tags="najem" data-name="pustostan vacancy">
+  <div class="term-header"><div class="term-name">Pustostan (Vacancy)</div></div>
+  <div class="term-tags"><span class="term-tag tag-najem">Wynajem</span></div>
+  <div class="term-definition">Okres, w którym nieruchomość stoi pusta między najemcami lub w trakcie remontu — bez przychodu, ale z bieżącymi kosztami (rata kredytu, czynsz do wspólnoty, media). Ostrożna analiza zakłada 1–2 miesiące pustostanu rocznie (8–17% czasu). W dobrych lokalizacjach pustostan bywa znacznie niższy.</div>
+  <div class="term-formula">Efektywny przychód roczny = Czynsz × (12 − Miesiące pustostanu)<br>Wskaźnik pustostanu = Miesiące pustostanu ÷ 12 × 100%</div>
+  <a href="https://mmandai.github.io/pl-rentownosc-najmu/" class="term-calc">→ Kalkulator Rentowności</a>
+</div>
+
+</div>
+
+<!-- R -->
+<div class="terms-section" data-letter="R">
+<span class="section-anchor" id="section-R"></span>
+<div class="section-letter">R</div>
+
+<div class="term-card" data-tags="najem" data-name="rentowność najmu roi">
+  <div class="term-header"><div class="term-name">Rentowność Najmu (ROI)</div><span class="term-abbr">ROI</span></div>
+  <div class="term-tags"><span class="term-tag tag-najem">Wynajem</span></div>
+  <div class="term-definition">Roczny zwrot z inwestycji w wynajem, wyrażony jako procent zainwestowanego kapitału. Rozróżniamy rentowność brutto (przed kosztami) i netto (po kosztach). Przeciętna rentowność netto najmu w Polsce wynosi 4–6% rocznie. Wyniki powyżej 7% to bardzo dobry wynik.</div>
+  <div class="term-formula">Rentowność brutto = (Czynsz × 12) ÷ Cena zakupu × 100%<br>Rentowność netto = (Czynsz × 12 − Koszty roczne) ÷ Cena zakupu × 100%</div>
+  <div class="term-example"><strong>Przykład:</strong> Mieszkanie 400.000 zł · Czynsz 2.400 zł/mies · Koszty roczne 6.000 zł → Brutto = 7,2% · Netto = 5,7%.</div>
+  <a href="https://mmandai.github.io/pl-rentownosc-najmu/" class="term-calc">→ Kalkulator Rentowności</a>
+</div>
+
+<div class="term-card" data-tags="najem zakup" data-name="rynek wtórny pierwotny">
+  <div class="term-header"><div class="term-name">Rynek Wtórny vs Pierwotny</div></div>
+  <div class="term-tags"><span class="term-tag tag-zakup">Zakup</span><span class="term-tag tag-podatek">Podatek</span></div>
+  <div class="term-definition">Rynek pierwotny to zakup bezpośrednio od dewelopera (nowe budownictwo) — płacisz VAT 8% w cenie, brak PCC. Rynek wtórny to zakup od poprzedniego właściciela — płacisz PCC 2%, brak VAT. Rynek pierwotny często wiąże się z wyższą ceną za m², ale mieszkanie jest nowe i bez ryzyka ukrytych wad.</div>
+  <div class="term-example"><strong>Koszty zakupu:</strong> Rynek pierwotny: VAT w cenie + notariusz. Rynek wtórny: PCC 2% + notariusz + ewentualny pośrednik 2–3%.</div>
+</div>
+
+<div class="term-card" data-tags="najem podatek" data-name="ryczałt podatek od najmu">
+  <div class="term-header"><div class="term-name">Ryczałt od Najmu</div></div>
+  <div class="term-tags"><span class="term-tag tag-podatek">Podatek</span><span class="term-tag tag-najem">Wynajem</span></div>
+  <div class="term-definition">Uproszczona forma opodatkowania przychodów z najmu prywatnego. Stawka: 8,5% do progu 100.000 zł przychodów rocznie, 12,5% powyżej progu. Podatek liczony od przychodu (czynszu) — bez możliwości odliczania kosztów takich jak rata kredytu czy remont. Wybór ryczałtu do 20 lutego danego roku podatkowego.</div>
+  <div class="term-formula">Podatek ryczałt = Czynsz brutto × 8,5% (do 100.000 zł/rok)<br>Podatek ryczałt = Czynsz brutto × 12,5% (powyżej 100.000 zł/rok)</div>
+  <div class="term-example"><strong>Przykład:</strong> Czynsz 2.500 zł/mies = 30.000 zł/rok → Podatek ryczałt = 30.000 × 8,5% = 2.550 zł/rok = 212,50 zł/mies.</div>
+  <a href="https://mmandai.github.io/pl-rentownosc-najmu/" class="term-calc">→ Kalkulator Rentowności</a>
+</div>
+
+</div>
+
+<!-- S -->
+<div class="terms-section" data-letter="S">
+<span class="section-anchor" id="section-S"></span>
+<div class="section-letter">S</div>
+
+<div class="term-card" data-tags="ogolny" data-name="stopa zwrotu zwrot z inwestycji">
+  <div class="term-header"><div class="term-name">Stopa Zwrotu z Inwestycji</div><span class="term-abbr">ROI</span></div>
+  <div class="term-tags"><span class="term-tag tag-najem">Wynajem</span><span class="term-tag tag-flip">Flip</span></div>
+  <div class="term-definition">Procentowy zwrot z zainwestowanego kapitału w danym okresie. Dla flipa liczymy zwrot jednorazowy oraz zwrot w ujęciu rocznym (annualizowany). Dla najmu — roczny zwrot z zainwestowanego wkładu własnego plus wszystkich kosztów transakcyjnych.</div>
+  <div class="term-formula">ROI = Zysk netto ÷ Zainwestowany kapitał × 100%<br>ROI roczny (flip) = (1 + ROI)^(12 ÷ Miesiące realizacji) − 1</div>
+  <div class="term-example"><strong>Przykład flipu:</strong> Zysk netto 45.000 zł · Zainwestowany kapitał 180.000 zł · Czas realizacji 6 miesięcy → ROI = 25% · ROI roczny = 56,25%.</div>
+  <a href="https://mmandai.github.io/pakiet-inwestora/" class="term-calc">→ Kalkulator Zysk z Flipu</a>
+</div>
+
+</div>
+
+<!-- W -->
+<div class="terms-section" data-letter="W">
+<span class="section-anchor" id="section-W"></span>
+<div class="section-letter">W</div>
+
+<div class="term-card" data-tags="kredyt zakup" data-name="wkład własny">
+  <div class="term-header"><div class="term-name">Wkład Własny</div></div>
+  <div class="term-tags"><span class="term-tag tag-kredyt">Kredyt</span><span class="term-tag tag-zakup">Zakup</span></div>
+  <div class="term-definition">Część ceny nieruchomości finansowana ze środków własnych kupującego (bez kredytu). Minimalny wymagany wkład własny w Polsce to 10% (przy ubezpieczeniu) lub 20% (standardowo). Im wyższy wkład, tym niższa rata i niższe RRSO kredytu. Wkład własny nie obejmuje kosztów transakcyjnych (PCC, notariusz).</div>
+  <div class="term-formula">Wkład własny = Cena zakupu × Min. 20%<br>Kwota kredytu = Cena zakupu − Wkład własny</div>
+  <div class="term-example"><strong>Przykład:</strong> Mieszkanie 500.000 zł · Wkład 20% = 100.000 zł · Kredyt = 400.000 zł. Dodatkowo: PCC 10.000 zł + notariusz ~3.000 zł = łącznie potrzeba ~113.000 zł oszczędności.</div>
+  <a href="https://mmandai.github.io/pl-kredyt-vs-wynajem/" class="term-calc">→ Kalkulator Kredyt vs Wynajem</a>
+</div>
+
+<div class="term-card" data-tags="kredyt zakup" data-name="wibor oprocentowanie zmienne">
+  <div class="term-header"><div class="term-name">WIBOR</div><span class="term-abbr">WIBOR</span></div>
+  <div class="term-tags"><span class="term-tag tag-kredyt">Kredyt</span></div>
+  <div class="term-definition">Warsaw Interbank Offered Rate — referencyjna stopa procentowa rynku międzybankowego w Polsce, będąca podstawą oprocentowania większości kredytów hipotecznych o zmiennej stopie. Oprocentowanie kredytu = WIBOR (3M lub 6M) + marża banku. WIBOR zmienia się co kwartał lub co pół roku.</div>
+  <div class="term-formula">Oprocentowanie kredytu = WIBOR 6M + Marża banku<br>Marża banku typowo: 1,8–2,5% rocznie</div>
+  <div class="term-example"><strong>Przykład:</strong> WIBOR 6M = 5,86% + Marża 2,1% = Oprocentowanie 7,96%. Zmiana WIBOR o 1 pkt proc. zmienia ratę kredytu 400.000 zł/25 lat o ok. ~230 zł/mies.</div>
+</div>
+
+</div>
+
+<!-- Z -->
+<div class="terms-section" data-letter="Z">
+<span class="section-anchor" id="section-Z"></span>
+<div class="section-letter">Z</div>
+
+<div class="term-card" data-tags="zakup ogolny" data-name="zdolność kredytowa">
+  <div class="term-header"><div class="term-name">Zdolność Kredytowa</div></div>
+  <div class="term-tags"><span class="term-tag tag-kredyt">Kredyt</span><span class="term-tag tag-zakup">Zakup</span></div>
+  <div class="term-definition">Maksymalna kwota kredytu, jaką bank jest skłonny udzielić na podstawie analizy dochodów, wydatków i historii kredytowej wnioskodawcy. Banki w Polsce przyjmują, że łączne raty zobowiązań nie powinny przekraczać 40–50% dochodów netto. Zdolność kredytową można zwiększyć przez dłuższy okres kredytowania, wyższe dochody lub mniejsze inne zobowiązania.</div>
+  <div class="term-formula">Max rata = Dochód netto × 40–50%<br>Orientacyjna zdolność ≈ Max rata × 130 (przy 25 latach i obecnych stopach)</div>
+  <div class="term-example"><strong>Przykład:</strong> Dochód netto 8.000 zł/mies · Max rata ~3.200 zł · Orientacyjna zdolność ≈ 415.000 zł (przy 7,5%, 25 lat).</div>
+</div>
+
+<div class="term-card" data-tags="najem zakup" data-name="zwrot z inwestycji nieruchomości">
+  <div class="term-header"><div class="term-name">Zwrot Okresu (Payback Period)</div></div>
+  <div class="term-tags"><span class="term-tag tag-najem">Wynajem</span><span class="term-tag tag-flip">Flip</span></div>
+  <div class="term-definition">Czas potrzebny do odzyskania zainwestowanego kapitału z wypracowanych zysków. Dla najmu — ile lat cashflow potrzeba, by pokryć wkład własny i koszty transakcyjne. Dla flipa — nie ma zwrotu okresu, bo inwestycja jest jednorazowa. Krótszy zwrot okresu = lepsza płynność inwestycji.</div>
+  <div class="term-formula">Okres zwrotu (najem) = Zainwestowany kapitał ÷ Roczny Cashflow netto</div>
+  <div class="term-example"><strong>Przykład:</strong> Wkład własny 100.000 zł + PCC 8.000 zł = 108.000 zł · Cashflow roczny netto 6.000 zł → Okres zwrotu = 18 lat.</div>
+  <a href="https://mmandai.github.io/pl-rentownosc-najmu/" class="term-calc">→ Kalkulator Rentowności</a>
+</div>
+
+</div>
+
+</div><!-- end termsContainer -->
+</div><!-- end glossary-wrap -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://mmandai.github.io/pl-rentownosc-najmu/">Rentowność Najmu</a>
+      <a href="https://mmandai.github.io/pl-kredyt-vs-wynajem/">Kredyt vs Wynajem</a>
+      <a href="https://mmandai.github.io/pakiet-inwestora/">Pakiet Inwestora</a>
+      <a href="https://imemyselfai.gumroad.com">Kup Excel</a>
+      <a href="https://mmandai.github.io/about/">About MMDAI</a>
+    </div>
+    <div class="footer-copy">© MMDAI 2026</div>
+    <p class="disclaimer">Słownik ma charakter wyłącznie informacyjny i edukacyjny. Definicje i stawki podatkowe są aktualizowane okresowo, ale mogą nie odzwierciedlać najnowszych zmian prawnych. Przed podjęciem decyzji inwestycyjnych skonsultuj się z doradcą podatkowym lub finansowym. Informacje aktualne na maj 2026.</p>
+  </div>
+</footer>
+
+<script>
+let activeFilter = 'all';
+
+function setFilter(filter, btn) {
+  activeFilter = filter;
+  document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  filterTerms();
+}
+
+function filterTerms() {
+  const cards = document.querySelectorAll('.term-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const tags = card.dataset.tags || '';
+    const match = activeFilter === 'all' || tags.includes(activeFilter);
+    card.classList.toggle('hidden', !match);
+    if (match) visible++;
+  });
+  document.querySelectorAll('.terms-section').forEach(section => {
+    const hasVisible = section.querySelectorAll('.term-card:not(.hidden)').length > 0;
+    section.classList.toggle('hidden', !hasVisible);
+  });
+  document.getElementById('noResults').style.display = visible === 0 ? 'block' : 'none';
+  const total = document.querySelectorAll('.term-card').length;
+  document.getElementById('resultsCount').textContent = visible < total ? `${visible} z ${total} pojęć` : `${total} pojęć`;
+}
+
+function buildLetterGrid() {
+  const grid = document.getElementById('letterGrid');
+  document.querySelectorAll('.terms-section').forEach(section => {
+    const letter = section.dataset.letter;
+    if (!letter) return;
+    const a = document.createElement('a');
+    a.href = '#section-' + letter;
+    a.className = 'letter-btn';
+    a.textContent = letter;
+    a.addEventListener('click', () => {
+      document.querySelectorAll('.letter-btn').forEach(l => l.classList.remove('active'));
+      a.classList.add('active');
+    });
+    grid.appendChild(a);
+  });
+}
+
+function updateActiveOnScroll() {
+  let current = '';
+  document.querySelectorAll('.terms-section').forEach(s => {
+    if (s.getBoundingClientRect().top < 160) current = s.dataset.letter;
+  });
+  document.querySelectorAll('.letter-btn').forEach(l => l.classList.toggle('active', l.textContent === current));
+}
+
+buildLetterGrid();
+filterTerms();
+window.addEventListener('scroll', updateActiveOnScroll, {passive:true});
+</script>
+</body>
+</html>
